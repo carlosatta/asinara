@@ -1,0 +1,64 @@
+/*
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Squada One', cursive;
+  font-family: 'Permanent Marker', cursive;*/
+  
+  /* Style for our header texts 
+  * --------------------------------------- */
+  h1{
+    font-size: 10em; 
+    font-family: arial,helvetica;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  p{
+    font-size: 1.5em; 
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+  }
+  
+  /* Centered texts in each section 
+  * --------------------------------------- */
+  .section{
+    text-align:center;
+  }
+  
+  
+  /* Backgrounds will cover all the section
+  * --------------------------------------- */
+  #index,
+  #section1,
+  #section2,
+  #section3{
+    background-size: cover;
+  }
+  
+  /* Defining each sectino background and styles 
+  * --------------------------------------- */
+  #index{
+    background-image: url(../images/cover.png);
+    /*padding: 30% 0 0 0;*/
+  }
+
+    /* Fixed header and footer.
+  * --------------------------------------- */
+  #header{
+    position: absolute;
+    top :0px;
+    height: 50px;
+    display: block;
+    z-index:999;
+    color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  #menu h1 {
+  	font-size: 3em; 
+  	color: rgba(0, 0, 0, 0.8);
+  }

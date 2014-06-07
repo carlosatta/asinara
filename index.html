@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>CSS3 - fullPage.js</title>
+	<meta name="author" content="Carlo Satta" />
+	<meta name="description" content="fullPage.js using CSS3 transformations." />
+	<meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo,css,css3" />
+	<meta name="Resource-type" content="Document" />
+  	
+
+	<link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css" />
+	<link type="text/css" rel="stylesheet" href="style/style.css" />
+  <link type="text/css" rel="stylesheet" href="style/jquery.mmenu.css" />
+  <link type="text/css" rel="stylesheet" href="style/jquery.mmenu.positioning.css" />
+  <link type="text/css" rel="stylesheet" href="style/jquery.mmenu.themes.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat|Lobster|Indie+Flower|Squada+One|Permanent+Marker' rel='stylesheet' type='text/css'>
+
+
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+  
+  <script type="text/javascript" src="scripts/jquery.mmenu.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.mmenu.dragopen.js"></script>
+  <script type="text/javascript" src="scripts/jquery.slicknav.min.js"></script>
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+        verticalCentered: true,
+				slidesColor: [null, '#4BBFC3', '#7BAABE'],
+       	css3: true
+      });
+		});
+	</script>
+
+  <script>
+    $(document).ready(function() {
+      $('nav#menu').mmenu({
+        classes: "mm-light",
+        position: "left",
+        zposition: "back"
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+<div id="header">
+<a href="#menu">
+  <img src="images/menu.png" alt="">
+</a>
+</div>
+
+<div id="fullpage">
+
+	<div class="section " id="index">
+		<h1>Asinara</h1>
+		<p>Parco nazionale area marina protetta</p>
+	</div>
+
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1>Speed on mobile</h1>
+			<p>
+	      If CSS3 transforms are supported (e.g. on mobile devices) they will be used for animations, usually a good
+	      choice if the animation on mobile devices is slow.
+			</p>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>No CSS3? No problem!</h1>
+			<p>If CSS3 is not available, animations will fall back to jQuery animate.</p>
+		</div>
+	</div>
+</div>
+
+<nav id="menu">
+  <!--  -->
+  <ul>
+  <h1>Asinara</h1>
+    <li><a href="#index">Pagina inizialee</a></li>
+    <li><a href="positions.html">Positioning the menu</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+</body>
+</html>
