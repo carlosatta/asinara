@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "it.wasabipeas.asinara"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+    
+    <!-- Generic Info -->
+    <name>Asinara</name>
+    <description></description>
+    <author href="http://wasabipeas.it" email="carlo.satta@wasabipeas.it">
+        Carlo Satta
+    </author>
+
+
+
+    <!-- Preference -->
+    <preference name="permissions" value="none"/>
+    <preference name="phonegap-version" value="3.1.0" /> <!-- all: current version of PhoneGap -->
+
+    <!-- Customize your app and platform with the preference element. -->
+    <gap:platform name="android" />
+
+    <!-- Plugin -->
+
+    <!-- Core plugins -->
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <!-- <icon src="res/icon/android/drawable-ldpi/ic_launcher.png" gap:platform="android" gap:density="ldpi" /> -->
+    <!-- <icon src="res/icon/android/drawable-mdpi/ic_launcher.png" gap:platform="android" gap:density="mdpi" /> -->
+    <!-- <icon src="res/icon/android/drawable-hdpi/ic_launcher.png" gap:platform="android" gap:density="hdpi" /> -->
+    <!-- <icon src="res/icon/android/drawable-xhdpi/ic_launcher.png" gap:platform="android" gap:density="xhdpi" /> -->
+
+    <!-- Define app splash screen for each platform. -->
+
+    <!-- Access -->
+
+</widget>
